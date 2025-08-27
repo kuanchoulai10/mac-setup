@@ -42,7 +42,6 @@ brew install zsh
 chsh -s $(which zsh)
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 ```
 
 ### Install Essential Applications via Homebrew
@@ -52,19 +51,6 @@ Go to [`homebrew/`](./homebrew/) directory and see the instructions there.
 ### Install Terraform
 
 Go to [`terraform/`](./terraform/) directory and see the instructions there.
-
-### Clone My Personal Repositories
-
-```bash
-cd ~/Projects
-
-git clone https://github.com/kuanchoulai10/monorepo.git --recurse-submodules
-git clone https://github.com/kuanchoulai10/kuanchoulai10.git
-git clone https://github.com/kuanchoulai10/leetcode.git
-git clone https://github.com/kuanchoulai10/retail-lakehouse.git
-git clone https://github.com/kuanchoulai10/data-mesh.git
-git clone https://github.com/kuanchoulai10/data2ml-ops.git
-```
 
 ### Alias
 
@@ -79,14 +65,34 @@ alias k="kubectl"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
+### Clone My Personal Repositories
+
+```bash
+cd ~/Projects
+
+git clone https://github.com/kuanchoulai10/monorepo.git --recurse-submodules
+git clone https://github.com/kuanchoulai10/kuanchoulai10.git
+git clone https://github.com/kuanchoulai10/leetcode.git
+git clone https://github.com/kuanchoulai10/retail-lakehouse.git
+git clone https://github.com/kuanchoulai10/data-mesh.git
+git clone https://github.com/kuanchoulai10/data2ml-ops.git
+```
+
 ### Setup Karabiner-Elements
 
 Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
 
+### Raycast
+
+See [`raycast/`](./raycast/) directory for instructions.
+
 ### Customize macOS Settings
 
-- `Energy` > 螢幕不顯示時，不關機
-- `Lock Screen` > ``
+- `Energy` > `Prevent automatic sleeping on power adapter when the display is off`
+- `Lock Screen`
+    - `Start screen saver when inactive for` > `3 minutes`
+    - `Turn display off after` > `10 minutes`
+    - `Require password` > `immediately` after sleep or screen saver begins or display is turned off
 - `General` > `Login Items & Extensions` > `Open at Login`
 - `General` > `Sharing` > `Remote Login`
 - `Desktop & Dock` > `Automatically hide and show the Dock`
@@ -97,4 +103,3 @@ Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instr
     - `Shottr`
     - `Xnapper`
     - `Zoom`
-
