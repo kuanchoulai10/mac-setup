@@ -6,7 +6,6 @@ A curated setup for a fresh macOS development environment, including essential t
 
 [Set up Mac with iPhone or iPad](https://support.apple.com/en-us/122216).
 
-
 ### Install Xcode Command Line Tools
 
 Install Xcode Command Line Tools by running the following command in your terminal:
@@ -67,6 +66,35 @@ git clone https://github.com/kuanchoulai10/data-mesh.git
 git clone https://github.com/kuanchoulai10/data2ml-ops.git
 ```
 
+### Alias
+
+```bash
+echo '# Alias
+alias cat="bat"
+alias ls="eza"
+alias ll="eza -alh"
+alias tree="eza --tree --level=3"
+alias k="kubectl"' >> ~/.zshrc
+
+source ~/.zshrc
+```
+
 ### Setup Karabiner-Elements
 
 Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
+
+### Customize macOS Settings
+
+- `Energy` > 螢幕不顯示時，不關機
+- `Lock Screen` > ``
+- `General` > `Login Items & Extensions` > `Open at Login`
+- `General` > `Sharing` > `Remote Login`
+- `Desktop & Dock` > `Automatically hide and show the Dock`
+- `Privacy & Security` > `Screen & System Audio Recording` > `Screen & System Audio Recording` > Add
+    - `ChatGPT`
+    - `Google Chrome`
+    - `LINE`
+    - `Shottr`
+    - `Xnapper`
+    - `Zoom`
+
