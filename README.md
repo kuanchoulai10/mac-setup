@@ -35,23 +35,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## Install Oh My Zsh
 
+Install [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#macos) and [Oh My Zsh](https://ohmyz.sh/):
+
 ```bash
 brew install zsh
-```
 
-Install [Oh My Zsh](https://ohmyz.sh/):
+chsh -s $(which zsh)
 
-```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
 
-## Clone this Repository
-
-```bash
-mkdir ~/Projects
-cd ~/Projects
-
-git clone https://github.com/kuanchoulai10/mac-setup.git
 ```
 
 ## Install Essential Applications via Homebrew
