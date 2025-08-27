@@ -16,6 +16,7 @@ libomp
 libpq
 minikube
 nvm
+npm
 opa
 openjdk@21
 pipx
