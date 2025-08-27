@@ -78,6 +78,21 @@ git clone https://github.com/kuanchoulai10/data-mesh.git
 git clone https://github.com/kuanchoulai10/data2ml-ops.git
 ```
 
+### AWS, Gemini, and OpenAI
+
+```bash
+echo '
+# AWS
+export AWS_ACCESS_KEY_ID="_________"
+export AWS_SECRET_ACCESS_KEY="_________"
+
+# Gemini
+export GEMINI_API_KEY="_________"
+
+# OpenAI
+export OPENAI_API_KEY="_________"' >> ~/.zshrc
+```
+
 ### Setup Karabiner-Elements
 
 Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
