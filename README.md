@@ -56,4 +56,25 @@ git clone https://github.com/kuanchoulai10/mac-setup.git
 
 ## Install Essential Applications via Homebrew
 
-Go to the [`homebrew`](./homebrew/) directory and see the instructions there.
+Go to [`homebrew/`](./homebrew/) directory and see the instructions there.
+
+## Install Terraform
+
+Go to [`terraform/`](./terraform/) directory and see the instructions there.
+
+## Clone My Personal Repositories
+
+```bash
+cd ~/Projects
+
+git clone https://github.com/kuanchoulai10/monorepo.git --recurse-submodules
+git clone https://github.com/kuanchoulai10/kuanchoulai10.git
+git clone https://github.com/kuanchoulai10/leetcode.git
+git clone https://github.com/kuanchoulai10/retail-lakehouse.git
+git clone https://github.com/kuanchoulai10/data-mesh.git
+git clone https://github.com/kuanchoulai10/data2ml-ops.git
+```
+
+## Setup Karabiner-Elements
+
+Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
