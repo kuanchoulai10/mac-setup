@@ -56,7 +56,7 @@ Go to [`terraform/`](./terraform/) directory and see the instructions there.
 
 ```bash
 echo '# Alias
-alias cat="bat"
+alias cat="bat -pp"
 alias ls="eza"
 alias ll="eza -alh"
 alias tree="eza --tree --level=3"
@@ -83,6 +83,7 @@ git clone https://github.com/kuanchoulai10/data2ml-ops.git
 ```bash
 echo '
 # AWS
+export AWS_REGION="ap-east-2" # Taiwan
 export AWS_ACCESS_KEY_ID="_________"
 export AWS_SECRET_ACCESS_KEY="_________"
 

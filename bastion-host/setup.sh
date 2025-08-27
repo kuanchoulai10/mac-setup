@@ -2,59 +2,77 @@
 
 set -e
 
-export AWS_REGION="ap-east-2" # Taiwan
+# Stage 1
+echo "Stage 1: Collecting user inputs ..."
+read -p "  Enter AWS region (default: ap-east-2): " AWS_REGION
+export AWS_REGION="${AWS_REGION:-ap-east-2}"
 
-# 你的目前 MACBOOK 公網 IP（用來限制 EC2 22/tcp）
-export MACBOOK_IP_CIDR="$(curl -s https://checkip.amazonaws.com)/32"
+DEFAULT_MACBOOK_IP_CIDR="$(curl -s https://checkip.amazonaws.com)/32"
+read -p "  Enter your MacBook public IP CIDR (default: $DEFAULT_MACBOOK_IP_CIDR): " MACBOOK_IP_CIDR
+export MACBOOK_IP_CIDR="${MACBOOK_IP_CIDR:-$DEFAULT_MACBOOK_IP_CIDR}"
 
-# 家裡網路（HOME 所在）公網 IP（初次可手動填；之後若更動可再更新規則）
-export HOME_IP_CIDR="X.Y.Z.W/32"
+read -p "  Enter your HOME public IP CIDR (default: X.Y.Z.W/32): " HOME_IP_CIDR
+export HOME_IP_CIDR="${HOME_IP_CIDR:-X.Y.Z.W/32}"
+
+read -p "  Enter EC2 instance name (default: bastion-ec2): " INSTANCE_NAME
+export INSTANCE_NAME="${INSTANCE_NAME:-bastion-ec2}"
+
+read -p "  Enter SSH key pair name (default: bastion-key): " KEY_NAME
+export KEY_NAME="${KEY_NAME:-bastion-key}"
+
+read -p "  Enter security group name (default: bastion-sg): " SG_NAME
+export SG_NAME="${SG_NAME:-bastion-sg}"
 
 
 
-# 建立 SSH Key Pair
-export KEY_NAME="bastion-key"
+# Stage 2
+echo "Stage 2: Creating SSH Key Pair ..."
+echo "  Creating SSH key pair '$KEY_NAME' and saving to ~/.ssh/${KEY_NAME}.pem ..."
 aws ec2 create-key-pair \
   --region "$AWS_REGION" \
   --key-name "$KEY_NAME" \
   --query 'KeyMaterial' \
   --output text > ~/.ssh/${KEY_NAME}.pem
-chmod 600 ~/.ssh/${KEY_NAME}.pem
+chmod 400 ~/.ssh/${KEY_NAME}.pem
+echo "  SSH private key saved to ~/.ssh/${KEY_NAME}.pem"
 
-# 建 SG
-export SG_NAME="bastion-sg"
+echo "  Creating security group '$SG_NAME' ..."
 export SG_ID=$(aws ec2 create-security-group \
   --region "$AWS_REGION" \
   --group-name "$SG_NAME" \
   --description "Bastion SG for reverse SSH" \
   --query 'GroupId' \
   --output text)
-echo "$SG_ID"
+echo "  Security group created. SG_ID: $SG_ID"
 
-# 允許 MACBOOK IP 連 EC2:22（描述=MACBOOK-SSH）
+echo "  Authorizing SSH ingress from MacBook public IP ($MACBOOK_IP_CIDR) ..."
 aws ec2 authorize-security-group-ingress \
   --region "$AWS_REGION" \
   --group-id "$SG_ID" \
   --ip-permissions "IpProtocol=tcp,FromPort=22,ToPort=22,IpRanges=[{CidrIp=${MACBOOK_IP_CIDR},Description=MACBOOK-SSH}]"
 
-# 允許 家裡(HOME) IP 連 EC2:22（描述=HOME-SSH）
+echo "  Authorizing SSH ingress from HOME public IP ($HOME_IP_CIDR) ..."
 aws ec2 authorize-security-group-ingress \
   --region "$AWS_REGION" \
   --group-id "$SG_ID" \
   --ip-permissions "IpProtocol=tcp,FromPort=22,ToPort=22,IpRanges=[{CidrIp=${HOME_IP_CIDR},Description=HOME-SSH}]"
+echo "  Security group ingress rules configured."
 
-# 建 EC2
 
+
+# Stage 3
+echo "Stage 3: Launching EC2 instance ..."
 # 找最新的 Amazon Linux 2023 x86_64 AMI
+echo "  Fetching latest Amazon Linux 2023 x86_64 AMI ..."
 export AMI_ID=$(aws ec2 describe-images \
   --region "$AWS_REGION" \
   --owners amazon \
   --filters "Name=name,Values=al2023-ami-2023.*-x86_64" "Name=state,Values=available" \
   --query 'sort_by(Images, &CreationDate)[-1].ImageId' \
   --output text)
-echo "$AMI_ID"
+echo "  AMI ID: $AMI_ID"
 
-export INSTANCE_NAME="bastion-ec2"
+echo "  Launching EC2 instance ..."
 export INSTANCE_ID=$(aws ec2 run-instances \
   --region "$AWS_REGION" \
   --image-id "$AMI_ID" \
@@ -64,13 +82,12 @@ export INSTANCE_ID=$(aws ec2 run-instances \
   --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=${INSTANCE_NAME}}]" \
   --query 'Instances[0].InstanceId' \
   --output text)
-echo "$INSTANCE_ID"
 
-# 取EC2公網 IP
+echo "  Waiting for EC2 instance ($INSTANCE_ID) to be ready ..."
 aws ec2 wait instance-status-ok --region "$AWS_REGION" --instance-ids "$INSTANCE_ID"
 export EC2_PUBLIC_IP=$(aws ec2 describe-instances \
   --region "$AWS_REGION" \
   --instance-ids "$INSTANCE_ID" \
   --query 'Reservations[0].Instances[0].PublicIpAddress' \
   --output text)
-echo "$EC2_PUBLIC_IP"
+echo "  EC2 instance is running. (Public IP: $EC2_PUBLIC_IP)"
