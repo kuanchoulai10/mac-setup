@@ -2,7 +2,6 @@ anki
 canva
 chatgpt
 claude
-claude-code
 discord
 docker
 docker-desktop
@@ -21,4 +20,5 @@ trader-workstation
 visual-studio-code
 warp
 whatsapp
+xnapper
 zoom
