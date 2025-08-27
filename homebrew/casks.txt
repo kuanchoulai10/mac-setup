@@ -12,7 +12,6 @@ google-chrome
 google-cloud-sdk
 heptabase
 karabiner-elements
-kindle
 postman
 raycast
 shottr

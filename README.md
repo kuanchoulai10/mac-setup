@@ -56,9 +56,4 @@ git clone https://github.com/kuanchoulai10/mac-setup.git
 
 ## Install Essential Applications via Homebrew
 
-```bash
-cd ~/Projects/mac-setup/homebrew
-
-brew install --cask $(cat casks.txt)
-brew install $(cat formulae.txt)
-```
+Go to the [`homebrew`](./homebrew/) directory and see the instructions there.

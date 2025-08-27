@@ -8,7 +8,6 @@ gh
 go
 graphviz
 grpcurl
-hashicorp/tap/terraform
 helm
 kafka
 kompose
