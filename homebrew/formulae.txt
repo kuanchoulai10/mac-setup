@@ -9,11 +9,13 @@ gh
 go
 graphviz
 grpcurl
+helix
 helm
 kafka
 kompose
 libomp
 libpq
+micro
 minikube
 nvm
 npm

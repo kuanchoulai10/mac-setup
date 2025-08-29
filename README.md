@@ -1,4 +1,4 @@
-# Mac Environment Setup
+# Mac Setup
 
 A curated setup for a fresh macOS development environment, including essential tools, configurations, and scripts to get up and running quickly.
 
@@ -16,54 +16,9 @@ xcode-select --install
 
 This will prompt a dialog to install the tools. After installation, essential tools like `git`, `python3`, `gcc`, etc. will be installed
 
-### Install Homebrew
-
-Install [Homebrew](https://brew.sh/), the package manager for macOS:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Run these commands to add Homebrew to your PATH:
-
-```bash
-echo >> ~/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-
-### Install Oh My Zsh
-
-Install [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#macos) and [Oh My Zsh](https://ohmyz.sh/):
-
-```bash
-brew install zsh
-
-chsh -s $(which zsh)
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-### Install Essential Applications via Homebrew
+### Install Homebrew and All the Essential Applications via Homebrew
 
 Go to [`homebrew/`](./homebrew/) directory and see the instructions there.
-
-### Install Terraform
-
-Go to [`terraform/`](./terraform/) directory and see the instructions there.
-
-### Alias
-
-```bash
-echo '# Alias
-alias cat="bat -pp"
-alias ls="eza"
-alias ll="eza -alh"
-alias tree="eza --tree --level=3"
-alias k="kubectl"' >> ~/.zshrc
-
-source ~/.zshrc
-```
 
 ### Clone My Personal Repositories
 
@@ -83,7 +38,7 @@ git clone https://github.com/kuanchoulai10/data2ml-ops.git
 ```bash
 echo '
 # AWS
-export AWS_REGION="ap-east-2" # Taiwan
+export AWS_REGION="_________" # Taiwan (ap-east-2)
 export AWS_ACCESS_KEY_ID="_________"
 export AWS_SECRET_ACCESS_KEY="_________"
 
@@ -92,6 +47,8 @@ export GEMINI_API_KEY="_________"
 
 # OpenAI
 export OPENAI_API_KEY="_________"' >> ~/.zshrc
+
+source ~/.zshrc
 ```
 
 ### Setup Karabiner-Elements
