@@ -111,7 +111,6 @@ Set up Helix for Python Development:
 
 ```bash
 touch ~/.config/helix/languages.toml
-
 echo '
 # Helix Language
 # https://docs.helix-editor.com/languages.html#languages
@@ -139,8 +138,9 @@ auto-format = true
 
 formatter = { command = "uvx", args = ["ruff", "format", "-"] }
 
-
-# 專案根目錄提示（建議加上 pyproject.toml）
 roots = [".git", "pyproject.toml", "pyrefly.toml"]
 ' >> ~/.config/helix/languages.toml
+
+touch config.toml
+echo 'theme = "ayu_evolve"' >> ~/.config/helix/config.toml
 ```
