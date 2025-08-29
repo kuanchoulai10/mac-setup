@@ -1,5 +1,5 @@
-awscli
 autossh
+awscli
 bat
 eza
 ffmpeg
@@ -17,15 +17,17 @@ libomp
 libpq
 micro
 minikube
-nvm
 npm
+nvm
 opa
 openjdk@21
 pipx
+pyrefly
 python@3.10
 python@3.11
 python@3.12
 python@3.13
+ruff
 sqlfluff
 tmux
 uv
