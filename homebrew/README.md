@@ -105,6 +105,7 @@ alias ll="eza -alh"
 alias tree="eza --tree --level=3"
 alias vim="hx"
 alias nano="micro"
+alias top="btop"
 alias k="kubectl"
 alias myip="curl -s https://checkip.amazonaws.com"
 
