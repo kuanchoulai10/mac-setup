@@ -2,11 +2,14 @@ anki
 canva
 chatgpt
 claude
+claude-code
+codex
 discord
 docker
 docker-desktop
 drawio
 gcloud-cli
+gemini-cli
 google-chrome
 google-cloud-sdk
 heptabase
