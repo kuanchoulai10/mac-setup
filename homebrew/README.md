@@ -1,5 +1,7 @@
 # Install Homebrew and All the Essential Applications via Homebrew
 
+This guide will help you set up your macOS environment by installing Homebrew, Zsh, Oh My Zsh, and all the essential applications via Homebrew. Additionally, it will guide you on customizing your shell environment and setting up Helix for Python development. Below is a checklist of the steps involved:
+
 - [ ] Install homebrew
 - [ ] Install Zsh and Oh My Zsh
 - [ ] Install All the Essential Applications via Homebrew
@@ -52,7 +54,6 @@ brew install --formula $(cat formulae.txt)
 # https://developer.hashicorp.com/terraform/install
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
-
 ```
 
 ## Customize Your Shell Environment:
@@ -63,7 +64,6 @@ To customize your shell environment, run the following commands to append necess
 mkdir -p ~/.nvm
 
 echo '
-
 # uv Shell Autocompletions
 # https://docs.astral.sh/uv/getting-started/installation/#shell-autocompletion
 eval "$(uv generate-shell-completion zsh)"
@@ -160,9 +160,9 @@ theme = "kaolin-light"' >> ~/.config/helix/config.toml
 
 This will:
 
-- set up Helix with Python language support using `pyrefly` and `ruff`
-- enable auto-formatting on save using `ruff`
-- set the Helix theme to "kaolin-light"
+- Set up Helix with Python language support using `pyrefly` and `ruff`
+- Enable auto-formatting on save using `ruff`
+- Set the Helix theme to "kaolin-light"
 
 ---
 
