@@ -38,14 +38,17 @@ git clone https://github.com/kuanchoulai10/data2ml-ops.git
 ```bash
 echo '
 # AWS
+# https://console.aws.amazon.com/console/home
 export AWS_REGION="_________" # Taiwan (ap-east-2)
 export AWS_ACCESS_KEY_ID="_________"
 export AWS_SECRET_ACCESS_KEY="_________"
 
 # Gemini
+# https://aistudio.google.com/app/apikey
 export GEMINI_API_KEY="_________"
 
 # OpenAI
+# https://platform.openai.com/api-keys
 export OPENAI_API_KEY="_________"' >> ~/.zshrc
 
 source ~/.zshrc

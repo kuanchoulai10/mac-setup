@@ -33,7 +33,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 Clone this repository and install all the essential applications via Homebrew:
 
 ```bash
-mkdir ~/Projects
+mkdir -p ~/Projects
 cd ~/Projects
 git clone https://github.com/kuanchoulai10/mac-setup.git
 
@@ -52,7 +52,7 @@ brew install hashicorp/tap/terraform
 ## Customize Your Shell Environment:
 
 ```bash
-mkdir ~/.nvm
+mkdir -p ~/.nvm
 
 echo '
 
@@ -95,7 +95,6 @@ alias cat="bat -pp"
 alias ls="eza"
 alias ll="eza -alh"
 alias tree="eza --tree --level=3"
-alias find="fzf"
 alias vim="hx"
 alias nano="micro"
 alias k="kubectl"
@@ -110,6 +109,8 @@ source ~/.zshrc
 Set up Helix for Python Development:
 
 ```bash
+mkdir -p ~/.config/helix
+
 touch ~/.config/helix/languages.toml
 echo '
 # Helix Language
@@ -143,7 +144,9 @@ roots = [".git", "pyproject.toml", "pyrefly.toml"]
 ' >> ~/.config/helix/languages.toml
 
 
-touch config.toml
+touch ~/.config/helix/config.toml
 echo '
 theme = "kaolin-light"' >> ~/.config/helix/config.toml
 ```
+
+After completing the above steps, go back to [Clone My Personal Repositories](../README.md#clone-my-personal-repositories) step to continue the setup.
