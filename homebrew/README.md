@@ -145,5 +145,5 @@ roots = [".git", "pyproject.toml", "pyrefly.toml"]
 
 touch config.toml
 echo '
-theme = "ayu_evolve"' >> ~/.config/helix/config.toml
+theme = "kaolin-light"' >> ~/.config/helix/config.toml
 ```
