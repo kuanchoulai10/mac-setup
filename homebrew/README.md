@@ -114,18 +114,19 @@ touch ~/.config/helix/languages.toml
 echo '
 # Helix Language
 # https://docs.helix-editor.com/languages.html#languages
+# https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
 # ruff
 # https://docs.astral.sh/ruff/editors/#language-server-protocol
 # https://docs.astral.sh/ruff/editors/setup/#helix
 
 
 [language-server.pyrefly]
-command = "uvx"
-args = ["pyrefly", "lsp"]
+command = "pyrefly"
+args = ["lsp"]
 
 [language-server.ruff]
-command = "uvx"
-args = ["ruff", "server"]
+command = "ruff"
+args = ["server"]
 
 [[language]]
 name = "python"
@@ -136,11 +137,13 @@ language-servers = [
 ]
 auto-format = true
 
-formatter = { command = "uvx", args = ["ruff", "format", "-"] }
+formatter = { command = "ruff", args = ["format", "-"] }
 
 roots = [".git", "pyproject.toml", "pyrefly.toml"]
 ' >> ~/.config/helix/languages.toml
 
+
 touch config.toml
-echo 'theme = "ayu_evolve"' >> ~/.config/helix/config.toml
+echo '
+theme = "ayu_evolve"' >> ~/.config/helix/config.toml
 ```
