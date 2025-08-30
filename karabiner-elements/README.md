@@ -2,5 +2,27 @@
 
 Set up `Caps Lock` as a `Hyper Key` when pressed with other keys, and as `Caps Lock` itself when pressed alone.
 
-- Copy `caps-lock-to-hyper-key.json`'s content to clipboard.
-- Open Karabiner-Elements > Complex Modifications > Add your own rules > Paste to add a new rule.
+Copy the following JSON configuration:
+
+```json
+{
+    "description": "Caps Lock → Hyper Key (⌃⌥⇧⌘) (Caps Lock if alone)",
+    "manipulators": [
+        {
+            "from": { "key_code": "caps_lock" },
+            "to": [
+                {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                }
+            ],
+            "to_if_alone": [{ "key_code": "caps_lock" }],
+            "type": "basic"
+        }
+    ]
+}
+```
+
+Open `Karabiner-Elements` > `Complex Modifications` > `Add your own rules` > Paste the JSON configuration above
+
+After completing the above steps, go back to [README.md](../README.md) to continue the setup.
