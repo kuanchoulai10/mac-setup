@@ -1,5 +1,11 @@
 # Install Homebrew and All the Essential Applications via Homebrew
 
+- [ ] Install homebrew
+- [ ] Install Zsh and Oh My Zsh
+- [ ] Install All the Essential Applications via Homebrew
+- [ ] Customize Your Shell Environment
+- [ ] Set up Helix for Python Development
+
 ### Install homebrew
 
 Install [Homebrew](https://brew.sh/), the package manager for macOS:
@@ -50,6 +56,8 @@ brew install hashicorp/tap/terraform
 ```
 
 ## Customize Your Shell Environment:
+
+To customize your shell environment, run the following commands to append necessary configurations to your `~/.zshrc` file:
 
 ```bash
 mkdir -p ~/.nvm
@@ -105,8 +113,9 @@ alias myip="curl -s https://checkip.amazonaws.com"
 source ~/.zshrc
 ```
 
+## Set up Helix for Python Development
 
-Set up Helix for Python Development:
+Helix is a post-modern, vim-like text editor. To set up Helix for Python development, run the following commands:
 
 ```bash
 mkdir -p ~/.config/helix
@@ -148,5 +157,13 @@ touch ~/.config/helix/config.toml
 echo '
 theme = "kaolin-light"' >> ~/.config/helix/config.toml
 ```
+
+This will:
+
+- set up Helix with Python language support using `pyrefly` and `ruff`
+- enable auto-formatting on save using `ruff`
+- set the Helix theme to "kaolin-light"
+
+---
 
 After completing the above steps, go back to [Clone My Personal Repositories](../README.md#clone-my-personal-repositories) step to continue the setup.

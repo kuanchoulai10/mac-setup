@@ -23,6 +23,7 @@ Go to [`homebrew/`](./homebrew/) directory and see the instructions there.
 ### Clone My Personal Repositories
 
 ```bash
+mkdir -p ~/Projects
 cd ~/Projects
 
 git clone https://github.com/kuanchoulai10/monorepo.git --recurse-submodules
