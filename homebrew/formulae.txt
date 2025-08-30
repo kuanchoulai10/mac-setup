@@ -1,10 +1,13 @@
 autossh
 awscli
 bat
+codex
+colima
 eza
 ffmpeg
 fortio
 fzf
+gemini-cli
 gh
 go
 graphviz
