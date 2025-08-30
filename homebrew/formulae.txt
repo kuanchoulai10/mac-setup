@@ -1,6 +1,7 @@
 autossh
 awscli
 bat
+btop
 codex
 colima
 eza
