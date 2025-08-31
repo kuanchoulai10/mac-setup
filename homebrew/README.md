@@ -107,6 +107,8 @@ alias vim="hx"
 alias nano="micro"
 alias top="btop"
 alias k="kubectl"
+alias mkubectl="minikube kubectl --"
+alias mk="minikube kubectl --"
 alias myip="curl -s https://checkip.amazonaws.com"
 
 ' >> ~/.zshrc
