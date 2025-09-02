@@ -4,7 +4,6 @@ bat
 btop
 codex
 colima
-envsubst
 eza
 ffmpeg
 fortio
