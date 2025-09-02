@@ -2,9 +2,19 @@
 
 A curated setup for a fresh macOS development environment, including essential tools, configurations, and scripts to get up and running quickly.
 
+- [x] Mac Setup Assitant
+- [x] Install Xcode Command Line Tools
+- [x] Install Homebrew and All the Essential Applications via Homebrew
+- [x] Clone My Personal Repositories
+- [x] AWS, Gemini, and OpenAI
+- [ ] Bastion Host
+- [ ] Raycast
+- [x] Setup Karabiner-Elements
+- [x] Customize macOS Settings
+
 ### Mac Setup Assitant
 
-[Set up Mac with iPhone or iPad](https://support.apple.com/en-us/122216).
+- [Set up Mac with iPhone or iPad](https://support.apple.com/en-us/122216).
 
 ### Install Xcode Command Line Tools
 
@@ -59,9 +69,6 @@ source ~/.zshrc
 
 Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
 
-### Raycast
-
-See [`raycast/`](./raycast/) directory for instructions.
 
 ### Customize macOS Settings
 

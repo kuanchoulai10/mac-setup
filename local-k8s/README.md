@@ -3,21 +3,6 @@
 ```
 brew install minikube docker kubectl colima
 ```
-- [ ] Create
-
-
-## Create
-
-
-
-```
-```
-
-
-## Enable Registry
-
-https://minikube.sigs.k8s.io/docs/handbook/addons/registry-aliases/
-
 
 ## Colima
 
@@ -74,33 +59,6 @@ NAME            DESCRIPTION                               DOCKER ENDPOINT       
 colima-data *   colima [profile=data]                     unix:///Users/kcl/.colima/data/docker.sock   
 default         Current DOCKER_HOST based configuration   unix:///var/run/docker.sock                  
 desktop-linux   Docker Desktop                            unix:///Users/kcl/.docker/run/docker.sock    
-```
-
-Start
-
-```bash
-minikube config set profile data
-minikube config set cpus 3
-minikube config set memory 8G
-minikube config set disk-size 40G
-minikube config set driver docker
-minikube config set container-runtime containerd
-minikube config set kubernetes-version v1.30.2
-
-minikube config view
-minikube status
-minikube profile list
-docker ps -a
-
-minikube start \
-  --nodes 3 \
-  --addons registry \
-  --delete-on-failure
-
-minikube config view
-minikube status
-minikube profile list
-docker ps -a
 ```
 
 ---
