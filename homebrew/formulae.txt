@@ -16,6 +16,7 @@ graphviz
 grpcurl
 helix
 helm
+k9s
 kafka
 kompose
 libomp
