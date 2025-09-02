@@ -32,34 +32,46 @@ After executing the above command, you should see output like this:
 
 ```bash
 colima status -p data
-
-INFO[0000] colima [profile=data] is running using macOS Virtualization.Framework 
-INFO[0000] arch: aarch64                                
-INFO[0000] runtime: docker                              
-INFO[0000] mountType: virtiofs                          
-INFO[0000] docker socket: unix:///Users/kcl/.colima/data/docker.sock 
-INFO[0000] containerd socket: unix:///Users/kcl/.colima/data/containerd.sock 
 ```
+
+!!! info "Result"
+
+    ```
+    INFO[0000] colima [profile=data] is running using macOS Virtualization.Framework 
+    INFO[0000] arch: aarch64                                
+    INFO[0000] runtime: docker                              
+    INFO[0000] mountType: virtiofs                          
+    INFO[0000] docker socket: unix:///Users/kcl/.colima/data/docker.sock 
+    INFO[0000] containerd socket: unix:///Users/kcl/.colima/data/containerd.sock 
+    ```
 
 You can verify that Colima is running and check its status with:
 
 ```bash
 colima list
-
-PROFILE    STATUS     ARCH       CPUS    MEMORY    DISK      RUNTIME    ADDRESS
-data       Running    aarch64    8       24GiB     120GiB    docker     
 ```
+
+!!! info "Result"
+
+    ```
+    PROFILE    STATUS     ARCH       CPUS    MEMORY    DISK      RUNTIME    ADDRESS
+    data       Running    aarch64    8       24GiB     120GiB    docker     
+    ```
 
 After starting Colima, it would also set up a Docker context named `colima-data` that points to the Docker daemon running inside the Colima VM. You can check your current Docker contexts with:
 
 ```bash
 docker context ls
-
-NAME            DESCRIPTION                               DOCKER ENDPOINT                              ERROR
-colima-data *   colima [profile=data]                     unix:///Users/kcl/.colima/data/docker.sock   
-default         Current DOCKER_HOST based configuration   unix:///var/run/docker.sock                  
-desktop-linux   Docker Desktop                            unix:///Users/kcl/.docker/run/docker.sock    
 ```
+
+!!! info "Result"
+
+    ```
+    NAME            DESCRIPTION                               DOCKER ENDPOINT                              ERROR
+    colima-data *   colima [profile=data]                     unix:///Users/kcl/.colima/data/docker.sock   
+    default         Current DOCKER_HOST based configuration   unix:///var/run/docker.sock                  
+    desktop-linux   Docker Desktop                            unix:///Users/kcl/.docker/run/docker.sock    
+    ```
 
 ---
 
