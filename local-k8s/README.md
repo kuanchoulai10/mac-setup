@@ -1,6 +1,6 @@
 # [minikube](https://minikube.sigs.k8s.io/docs/)
 
-```
+```bash
 brew install minikube docker kubectl colima
 ```
 
