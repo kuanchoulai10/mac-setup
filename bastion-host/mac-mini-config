@@ -1,0 +1,21 @@
+Include /Users/kcl/.colima/ssh_config
+
+Host bastion-host
+  HostName xxx.xxx.xxx.xxx # IP of the bastion host
+  User ec2-user
+  IdentityFile path/to/your/bastion-key.pem
+  IdentitiesOnly yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 3
+
+Host bastion-host-reverse
+  HostName xxx.xxx.xxx.xxx # IP of the bastion host
+  User ec2-user
+  IdentityFile path/to/your/bastion-key.pem
+  IdentitiesOnly yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 3
+  # Bastion host (8022 port) to Mac mini (22 port)
+  RemoteForward 8022 localhost:22
+  ExitOnForwardFailure yes
+

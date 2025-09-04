@@ -1,0 +1,25 @@
+Host local
+  HostName kcl-mac-mini.local
+  User kcl
+
+Host bastion-host
+  User ec2-user
+  HostName xxx.xxx.xxx.xxx # IP of the bastion host
+  IdentitiesOnly yes
+  IdentityFile path/to/your/bastion-key.pem
+  ServerAliveInterval 30
+  ServerAliveCountMax 3
+  ClearAllForwardings yes
+  ControlMaster no
+  ControlPath none
+  ControlPersist no
+
+Host home
+  ProxyJump bastion-host
+  User kcl
+  HostName localhost
+  Port 8022
+  IdentitiesOnly yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 3
+  RequestTTY yes
