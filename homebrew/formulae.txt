@@ -20,6 +20,7 @@ jsonnet-bundler
 k9s
 kafka
 kompose
+kustomize
 libomp
 libpq
 m-cli
