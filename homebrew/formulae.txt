@@ -41,4 +41,5 @@ sqlfluff
 tmux
 uv
 yarn
+yq
 zsh-autosuggestions
