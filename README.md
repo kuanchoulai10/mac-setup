@@ -11,6 +11,7 @@ A curated setup for a fresh macOS development environment, including essential t
 - [ ] Raycast
 - [x] Setup Karabiner-Elements
 - [x] Customize macOS Settings
+- [ ] [helm-diff](https://github.com/databus23/helm-diff)
 
 ### Mac Setup Assitant
 
