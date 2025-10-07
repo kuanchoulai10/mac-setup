@@ -16,6 +16,7 @@ graphviz
 grpcurl
 helix
 helm
+jira-cli
 jsonnet
 jsonnet-bundler
 k9s
