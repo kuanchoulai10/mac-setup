@@ -2,6 +2,7 @@ act
 argocd
 autossh
 awscli
+azure-cli
 bat
 btop
 codex
