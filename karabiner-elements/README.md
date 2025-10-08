@@ -6,6 +6,8 @@ Open Karabiner-Elements application:
 - Allow in the background (`System Settings` > `General` > `Login Items & Extensions`)
     - Karabiner-Elements Non-Privileged Agents
     - Karabiner-Elements Privileged Daemons
+- Input Monitoring (`System Settings` > `Privacy & Security` > `Input Monitoring`)
+    - `karabiner-grabber`
 
 Set up `Caps Lock` as a `Hyper Key` when pressed with other keys, and as `Caps Lock` itself when pressed alone.
 
