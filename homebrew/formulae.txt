@@ -25,6 +25,7 @@ k9s
 kafka
 kompose
 kustomize
+lazygit
 libomp
 libpq
 m-cli
