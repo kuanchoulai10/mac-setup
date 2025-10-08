@@ -8,6 +8,8 @@ Open Karabiner-Elements application:
     - Karabiner-Elements Privileged Daemons
 - Input Monitoring (`System Settings` > `Privacy & Security` > `Input Monitoring`)
     - `karabiner-grabber`
+- (`System Settings` > `General` > `Login Items & Extensions` > `Extensions` > `Driver Extensions`)
+    - `.Karabiner-VirtualHIDDevice-Manager`
 
 Set up `Caps Lock` as a `Hyper Key` when pressed with other keys, and as `Caps Lock` itself when pressed alone.
 
