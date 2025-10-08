@@ -36,14 +36,21 @@ Go to [`homebrew/`](./homebrew/) directory and see the instructions there.
 
 Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
 
+
 ### Shottr
 
 Hotkeys
 
-- Fullscreen screenshot: shift + option + 5
-- Area screenshot: shift + option + 4
-- Scrolling screenshot: shift + option + s
+- Fullscreen screenshot: `shift + option + 5`
+- Area screenshot: `shift + option + 4`
+- Scrolling screenshot: `shift + option + s`
 
+
+### Raycast
+
+- `System Settings` > `Keyboard` `Keyboard Shortcuts` > `Spotlights` > Turn off `Show Spotlight search`
+- `Raycast Settings` > `General` > `Raycast Hotkey` > `Command + Space`
+  
 
 ### Clone My Personal Repositories
 
