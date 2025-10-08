@@ -1,5 +1,12 @@
 # Setup [Karabiner-Elements](https://karabiner-elements.pqrs.org/)
 
+Open Karabiner-Elements application:
+
+- Keyboard type: `ANSI`
+- Allow in the background (`System Settings` > `General` > `Login Items & Extensions`)
+    - Karabiner-Elements Non-Privileged Agents
+    - Karabiner-Elements Privileged Daemons
+
 Set up `Caps Lock` as a `Hyper Key` when pressed with other keys, and as `Caps Lock` itself when pressed alone.
 
 Copy the following JSON configuration:
