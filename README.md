@@ -31,6 +31,20 @@ This will prompt a dialog to install the tools. After installation, essential to
 
 Go to [`homebrew/`](./homebrew/) directory and see the instructions there.
 
+
+### Setup Karabiner-Elements
+
+Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
+
+### Shottr
+
+Hotkeys
+
+- Fullscreen screenshot: shift + option + 5
+- Area screenshot: shift + option + 4
+- Scrolling screenshot: shift + option + s
+
+
 ### Clone My Personal Repositories
 
 ```bash
@@ -43,7 +57,9 @@ git clone https://github.com/kuanchoulai10/leetcode.git
 git clone https://github.com/kuanchoulai10/retail-lakehouse.git
 git clone https://github.com/kuanchoulai10/data-mesh.git
 git clone https://github.com/kuanchoulai10/data2ml-ops.git
+git clone https://github.com/kuanchoulai10/argocd-demo.git
 ```
+
 
 ### AWS, Gemini, and OpenAI
 
@@ -66,14 +82,11 @@ export OPENAI_API_KEY="_________"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-### Setup Karabiner-Elements
-
-Go to [`karabiner-elements/`](./karabiner-elements/) directory and see the instructions there.
-
 
 ### Customize macOS Settings
 
 - `Energy` > `Prevent automatic sleeping on power adapter when the display is off`
+- `Keyboard` > `Text Input` > `Input Sources` > `Edit` > `Use the 中/英 key to switch to and from ABC`
 - `Lock Screen`
     - `Start screen saver when inactive for` > `3 minutes`
     - `Turn display off after` > `10 minutes`
