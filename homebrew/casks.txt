@@ -1,3 +1,4 @@
+alacritty
 anki
 canva
 chatgpt
@@ -9,6 +10,7 @@ docker-desktop
 drawio
 freeplane
 gcloud-cli
+ghostty
 google-chrome
 google-cloud-sdk
 heptabase
