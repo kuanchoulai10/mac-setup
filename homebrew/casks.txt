@@ -8,6 +8,7 @@ discord
 docker
 docker-desktop
 drawio
+font-hack-nerd-font
 freeplane
 gcloud-cli
 ghostty
