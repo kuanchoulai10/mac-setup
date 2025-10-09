@@ -10,7 +10,6 @@ colima
 eza
 ffmpeg
 fortio
-font-hack-nerd-font
 fzf
 gemini-cli
 gh
