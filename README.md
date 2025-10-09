@@ -94,6 +94,7 @@ source ~/.zshrc
 
 - `Energy` > `Prevent automatic sleeping on power adapter when the display is off`
 - `Keyboard` > `Text Input` > `Input Sources` > `Edit` > `Use the 中/英 key to switch to and from ABC`
+- `Keyboard` > `Keyboard Shortcuts` > `Services` > `text` > Uncheck `Convert Text to Simplified Chinese`
 - `Lock Screen`
     - `Start screen saver when inactive for` > `3 minutes`
     - `Turn display off after` > `10 minutes`
