@@ -69,7 +69,19 @@ echo '
 eval "$(uv generate-shell-completion zsh)"
 
 # Zsh Autosuggestions
+# https://formulae.brew.sh/formula/zsh-autosuggestions
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#homebrew
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Zsh Autocomplete
+# https://formulae.brew.sh/formula/zsh-autocomplete#default
+# https://github.com/marlonrichert/zsh-autocomplete
+source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# Zsh Syntax Hightlight
+# https://formulae.brew.sh/formula/zsh-syntax-highlighting
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set up fzf key bindings and fuzzy completion
 # https://github.com/junegunn/fzf#setting-up-shell-integration
