@@ -37,7 +37,6 @@ nvm
 opa
 openjdk@21
 pipx
-powerlevel10k
 pyrefly
 python@3.10
 python@3.11
@@ -45,9 +44,10 @@ python@3.12
 python@3.13
 ruff
 sqlfluff
+starship
 tmux
-zsh-syntax-highlighting
 uv
 yarn
 yq
 zsh-autosuggestions
+zsh-syntax-highlighting
