@@ -115,6 +115,9 @@ export NVM_DIR="$HOME/.nvm"
 # https://starship.rs/guide/
 eval "$(starship init zsh)"
 
+# K9S
+export K9S_SKIN="dracula"
+
 # Alias
 alias cat="bat -pp"
 alias ls="eza"
