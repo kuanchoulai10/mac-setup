@@ -137,13 +137,6 @@ alias myip="curl -s https://checkip.amazonaws.com"
 source ~/.zshrc
 ```
 
-## Starship
-
-```bash
-# https://starship.rs/presets/catppuccin-powerline
-starship preset catppuccin-powerline -o ~/.config/starship.toml
-```
-
 ## Ghostty
 
 ```bash
@@ -171,6 +164,15 @@ cursor-click-to-move = true
 ```
 
 `shift+command+,`
+
+
+## Starship
+
+```bash
+# https://starship.rs/presets/catppuccin-powerline
+starship preset catppuccin-powerline -o ~/.config/starship.toml
+```
+
 
 ## Set up Helix for Python Development
 
