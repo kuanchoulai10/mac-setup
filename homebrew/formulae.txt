@@ -10,6 +10,7 @@ colima
 eza
 ffmpeg
 fortio
+font-hack-nerd-font
 fzf
 gemini-cli
 gh
@@ -36,6 +37,7 @@ nvm
 opa
 openjdk@21
 pipx
+powerlevel10k
 pyrefly
 python@3.10
 python@3.11
