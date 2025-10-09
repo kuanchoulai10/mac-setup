@@ -49,5 +49,6 @@ uv
 yarn
 yazi
 yq
+zsh-autocomplete
 zsh-autosuggestions
 zsh-syntax-highlighting
