@@ -134,6 +134,33 @@ alias myip="curl -s https://checkip.amazonaws.com"
 source ~/.zshrc
 ```
 
+## Starship
+
+```bash
+# https://starship.rs/presets/catppuccin-powerline
+starship preset catppuccin-powerline -o ~/.config/starship.toml
+```
+
+## Ghostty
+
+```bash
+mkdir -p ~/.config/ghostty/
+
+touch ~/.config/ghostty/config
+
+echo '
+focus-follows-mouse = true
+shell-integration = zsh
+theme = Dracula
+font-size = 14
+font-thicken = true
+font-family = Hack Nerd Font Mono
+
+' >> ~/.config/ghostty/config
+```
+
+`shift+command+,`
+
 ## Set up Helix for Python Development
 
 Helix is a post-modern, vim-like text editor. To set up Helix for Python development, run the following commands:
