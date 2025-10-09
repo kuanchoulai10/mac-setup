@@ -155,6 +155,14 @@ theme = Dracula
 font-size = 14
 font-thicken = true
 font-family = Hack Nerd Font Mono
+background-opacity = 0.9
+background-blur = 5
+unfocused-split-opacity = 0.5
+window-padding-x = 8
+window-padding-y = 8
+link-url = true
+link-previews = true
+cursor-click-to-move = true
 
 ' >> ~/.config/ghostty/config
 ```
