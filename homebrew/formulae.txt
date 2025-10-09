@@ -5,11 +5,13 @@ awscli
 azure-cli
 bat
 btop
+cairo
 codex
 colima
 eza
 ffmpeg
 fortio
+freetype
 fzf
 gemini-cli
 gh
@@ -26,7 +28,10 @@ kafka
 kompose
 kustomize
 lazygit
+libffi
+libjpeg
 libomp
+libpng
 libpq
 m-cli
 micro
@@ -36,6 +41,7 @@ nvm
 opa
 openjdk@21
 pipx
+pngquant
 pyrefly
 python@3.10
 python@3.11
@@ -49,6 +55,7 @@ uv
 yarn
 yazi
 yq
+zlib
 zsh-autocomplete
 zsh-autosuggestions
 zsh-syntax-highlighting
