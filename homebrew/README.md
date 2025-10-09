@@ -159,6 +159,7 @@ window-padding-y = 8
 link-url = true
 link-previews = true
 cursor-click-to-move = true
+shell-integration-features=ssh-env,ssh-terminfo
 
 ' >> ~/.config/ghostty/config
 ```
@@ -173,6 +174,12 @@ cursor-click-to-move = true
 starship preset catppuccin-powerline -o ~/.config/starship.toml
 ```
 
+```toml
+[hostname]
+ssh_symbol = '@'
+style = "bg:red fg:crust"
+format = '[$ssh_symbol$hostname]($style)'
+```
 
 ## Set up Helix for Python Development
 
