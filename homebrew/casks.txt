@@ -1,3 +1,4 @@
+alt-tab
 anki
 canva
 chatgpt
