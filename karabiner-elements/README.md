@@ -34,6 +34,62 @@ Copy the following JSON configuration:
 }
 ```
 
+```
+{
+    "description": "Change Default Application Switcher to AltTab",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "tab",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "tab",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "grave_accent_and_tilde",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "left_shift",
+                "modifiers": {
+                    "mandatory": ["command"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_shift",
+                    "modifiers": ["option"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+```
+
 Open `Karabiner-Elements` > `Complex Modifications` > `Add your own rules` > Paste the JSON configuration above
 
 After completing the above steps, go back to [README.md](../README.md) to continue the setup.
