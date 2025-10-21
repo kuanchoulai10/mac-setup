@@ -19,6 +19,7 @@ karabiner-elements
 microsoft-outlook
 microsoft-teams
 postman
+pycharm
 raycast
 shottr
 slack
