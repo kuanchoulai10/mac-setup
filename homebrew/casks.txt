@@ -16,6 +16,7 @@ ghostty
 google-chrome
 google-cloud-sdk
 heptabase
+hoppscotch
 karabiner-elements
 microsoft-outlook
 microsoft-teams
