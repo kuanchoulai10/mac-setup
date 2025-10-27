@@ -23,6 +23,7 @@ helm
 jira-cli
 jsonnet
 jsonnet-bundler
+k6
 k9s
 kafka
 kompose
