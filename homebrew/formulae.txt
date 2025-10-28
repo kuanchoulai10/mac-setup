@@ -8,6 +8,7 @@ btop
 cairo
 codex
 colima
+eksctl
 eza
 ffmpeg
 fortio
