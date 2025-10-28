@@ -4,6 +4,7 @@ canva
 chatgpt
 claude
 claude-code
+dbeaver-community
 discord
 docker
 docker-desktop
