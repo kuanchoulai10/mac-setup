@@ -32,4 +32,5 @@ visual-studio-code
 warp
 whatsapp
 xnapper
+yaak
 zoom
