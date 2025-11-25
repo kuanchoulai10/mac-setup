@@ -32,6 +32,7 @@ trader-workstation
 visual-studio-code
 warp
 whatsapp
+xmind
 xnapper
 yaak
 zoom
