@@ -12,6 +12,7 @@ colima
 eksctl
 eza
 ffmpeg
+fluxcd/tap/flux
 fortio
 freetype
 fzf
