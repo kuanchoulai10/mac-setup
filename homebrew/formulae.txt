@@ -18,6 +18,7 @@ freetype
 fzf
 gemini-cli
 gh
+gum
 go
 graphviz
 grpcurl
