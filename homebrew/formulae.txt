@@ -1,4 +1,5 @@
 act
+ansible
 argocd
 argoproj/tap/kubectl-argo-rollouts
 autossh
