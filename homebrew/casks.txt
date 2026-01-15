@@ -18,6 +18,7 @@ google-chrome
 google-cloud-sdk
 heptabase
 hoppscotch
+insomnia
 karabiner-elements
 microsoft-outlook
 microsoft-teams
