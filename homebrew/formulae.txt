@@ -1,5 +1,6 @@
 act
 ansible
+apache-polaris
 argocd
 argoproj/tap/kubectl-argo-rollouts
 autossh
