@@ -22,6 +22,7 @@ gemini-cli
 gh
 gum
 go
+go-task
 graphviz
 grpcurl
 helix
@@ -29,6 +30,7 @@ helm
 jira-cli
 jsonnet
 jsonnet-bundler
+just
 k6
 k9s
 kafka
