@@ -61,6 +61,7 @@ sqlfluff
 starship
 tmux
 uv
+watch
 yarn
 yazi
 yq
